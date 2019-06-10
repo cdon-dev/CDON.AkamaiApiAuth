@@ -3,7 +3,7 @@ using System.IO;
 using System.Security.Cryptography;
 using System.Text;
 
-namespace AkamaiApiAuth
+namespace CDON.AkamaiApiAuth
 {
     internal static class Extensions
     {

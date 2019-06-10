@@ -1,6 +1,6 @@
 ﻿using System.Collections.Generic;
 
-namespace AkamaiApiAuth
+namespace CDON.AkamaiApiAuth
 {
     public class AkamaiAuthOptions
     {

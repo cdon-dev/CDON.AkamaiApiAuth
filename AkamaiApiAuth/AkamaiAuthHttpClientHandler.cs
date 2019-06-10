@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 using Microsoft.Net.Http.Headers;
 using MediaTypeHeaderValue = System.Net.Http.Headers.MediaTypeHeaderValue;
 
-namespace AkamaiApiAuth
+namespace CDON.AkamaiApiAuth
 {
     public class AkamaiAuthHttpClientHandler : DelegatingHandler
     {

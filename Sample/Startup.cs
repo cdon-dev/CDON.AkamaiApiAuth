@@ -1,5 +1,5 @@
 ﻿using System;
-using AkamaiApiAuth;
+using CDON.AkamaiApiAuth;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.Extensions.Configuration;
