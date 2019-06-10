@@ -10,10 +10,20 @@ namespace CDON.AkamaiApiAuth
 {
     public class AkamaiAuthHttpClientHandler : DelegatingHandler
     {
-        private readonly AkamaiAuthOptions _options;
-        private readonly AkamaiAuthGenerator _akamaiAuthGenerator;
+        private AkamaiAuthOptions _options;
+        private AkamaiAuthGenerator _akamaiAuthGenerator;
+
+        public AkamaiAuthHttpClientHandler(AkamaiAuthOptions options, HttpMessageHandler innerHandler) : base(innerHandler)
+        {
+            Initialize(options);
+        }
 
         public AkamaiAuthHttpClientHandler(AkamaiAuthOptions options)
+        {
+            Initialize(options);
+        }
+
+        private void Initialize(AkamaiAuthOptions options)
         {
             _options = options ?? throw new ArgumentNullException(nameof(options));
             _akamaiAuthGenerator = new AkamaiAuthGenerator(options);
