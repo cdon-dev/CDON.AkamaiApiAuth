@@ -17,11 +17,13 @@ namespace Sample
         [HttpGet("/diagnostics")]
         public async Task<IActionResult> Get()
         {
-            var response = await _httpClient.GetAsync("diagnostic-tools/v2/ghost-locations/available");
-            response.EnsureSuccessStatusCode();
+            using (var response = await _httpClient.GetAsync("diagnostic-tools/v2/ghost-locations/available"))
+            {
+                response.EnsureSuccessStatusCode();
 
-            var content = await response.Content.ReadAsAsync<JObject>();
-            return Json(content);
+                var content = await response.Content.ReadAsAsync<JObject>();
+                return Json(content);
+            }
         }
     }
 }
