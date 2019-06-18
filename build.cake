@@ -38,7 +38,7 @@ Task("Restore-Packages")
     .IsDependentOn("Clean")
     .Does(() =>
 {
-    NuGetRestore("./AkamaiApiAuth.sln");
+    // NuGetRestore("./AkamaiApiAuth.sln");
 });
 
 Task("Build")
@@ -53,9 +53,9 @@ Task("Run-Tests")
     .IsDependentOn("Build")
     .Does(() =>
 {
-    StartProcess("dotnet", new ProcessSettings {
-        Arguments = "test ./Tests/Tests.csproj"
-        });
+    // StartProcess("dotnet", new ProcessSettings {
+    //     Arguments = "test ./Tests/Tests.csproj"
+    //     });
 });
 
 Task("Package-NuGet")
