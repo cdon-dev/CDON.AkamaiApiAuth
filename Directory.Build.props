@@ -1,7 +1,7 @@
 ﻿<Project>
   <PropertyGroup>
     <Version>0.1.1</Version>
-    <Authors></Authors>
+    <Authors>CDON</Authors>
     <PackageIconUrl></PackageIconUrl>
     <RepositoryUrl>https://github.com/cdon-dev/CDON.AkamaiApiAuth</RepositoryUrl>
     <PackageProjectUrl>https://github.com/cdon-dev/CDON.AkamaiApiAuth</PackageProjectUrl>
