@@ -4,6 +4,7 @@
     <TargetFramework>netstandard2.0</TargetFramework>
     <AssemblyName>CDON.AkamaiApiAuth</AssemblyName>
     <RootNamespace>CDON.AkamaiApiAuth</RootNamespace>
+    <Description>An authentication handler for HttpClient.</Description>
   </PropertyGroup>
 
   <ItemGroup>

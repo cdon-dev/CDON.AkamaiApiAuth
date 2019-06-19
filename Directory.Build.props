@@ -1,5 +1,13 @@
 ﻿<Project>
   <PropertyGroup>
     <Version>0.1</Version>
+    <Authors></Authors>
+    <PackageIconUrl></PackageIconUrl>
+    <RepositoryUrl>https://github.com/cdon-dev/CDON.AkamaiApiAuth</RepositoryUrl>
+    <PackageProjectUrl>https://github.com/cdon-dev/CDON.AkamaiApiAuth</PackageProjectUrl>
+    <RepositoryType>git</RepositoryType>
+    <PackageTags>cdon,akamai,api,auth,authentication,authorization,httpclient</PackageTags>
+    <PackageLicenseUrl>https://opensource.org/licenses/Apache-2.0</PackageLicenseUrl>
+    <Product>CDON.AkamaiApiAuth</Product>
   </PropertyGroup>
  </Project>
